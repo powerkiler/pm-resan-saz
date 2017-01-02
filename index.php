@@ -1,5 +1,5 @@
 <?php
-define('API_KEY','توکن ربات');
+define('API_KEY','311767150:AAGd1YtVOuDJGvzwu2ZnYJouMx4lrwgsSxw');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -54,8 +54,8 @@ $txtmsg = $update->message->text;
 $reply = $update->message->reply_to_message->forward_from->id;
 $stickerid = $update->message->reply_to_message->sticker->file_id;
 $admin = ایدی عدد شما;
-$userbot = "یوزرنیم ربا شما همرا با @";
-$channel = "یوزرنیم کانال همرا با @";
+$userbot = "@Pm_sender_bot";
+$channel = "@make_pm_resan_channel";
 $step = file_get_contents("data/".$from_id."/step.txt");
 $ban = file_get_contents('data/banlist.txt');
 //-------
